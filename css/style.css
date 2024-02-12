@@ -323,7 +323,7 @@ body {
 }
 
 .running-line__content {
-  width: 100%;
+  width: 100vw;
   background-color: #F54932;
   height: 3.75rem;
 }
@@ -332,32 +332,33 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 100%;
   padding: 1.125rem 0.75rem;
   gap: 0.75rem;
   position: absolute;
-  left: 0;
 }
 
 .running-line__content-item {
-  width: 53.5625rem;
+  width: 53.4375rem;
   color: #fff;
   font-family: "Merriweather";
   font-size: 1.375rem;
   line-height: 110%;
   text-transform: uppercase;
   white-space: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   position: relative;
-  -webkit-animation: ticker 20s linear infinite;
-          animation: ticker 20s linear infinite;
+  -webkit-animation: ticker 25s linear infinite;
+          animation: ticker 25s linear infinite;
   -webkit-transition: -webkit-animation 0.3s linear 0s;
   transition: -webkit-animation 0.3s linear 0s;
   transition: animation 0.3s linear 0s;
@@ -919,25 +920,25 @@ body {
 
 @-webkit-keyframes ticker {
   from {
-    -webkit-transform: translateX(190%);
-            transform: translateX(190%);
+    -webkit-transform: translateX(210%);
+            transform: translateX(210%);
   }
 
   to {
-    -webkit-transform: translateX(-190%);
-            transform: translateX(-190%);
+    -webkit-transform: translateX(-280%);
+            transform: translateX(-280%);
   }
 }
 
 @keyframes ticker {
   from {
-    -webkit-transform: translateX(190%);
-            transform: translateX(190%);
+    -webkit-transform: translateX(210%);
+            transform: translateX(210%);
   }
 
   to {
-    -webkit-transform: translateX(-190%);
-            transform: translateX(-190%);
+    -webkit-transform: translateX(-280%);
+            transform: translateX(-280%);
   }
 }
 
