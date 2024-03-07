@@ -380,10 +380,6 @@ body {
   display: none;
 }
 
-.running-line.margin-null {
-  margin-bottom: 0;
-}
-
 .info-content__idea {
   display: -ms-grid;
   display: grid;
@@ -914,6 +910,10 @@ body {
   min-width: 0;
 }
 
+.margin-null {
+  margin-bottom: 0;
+}
+
 @-webkit-keyframes ticker {
   from {
     -webkit-transform: translateX(210%);
@@ -1128,6 +1128,10 @@ body {
 
   .body-info__title {
     margin-bottom: 3.75rem;
+  }
+
+  .margin-null {
+    margin-bottom: 0;
   }
 }
 
