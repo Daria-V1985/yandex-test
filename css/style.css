@@ -380,6 +380,10 @@ body {
   display: none;
 }
 
+.running-line.margin-null {
+  margin-bottom: 0;
+}
+
 .info-content__idea {
   display: -ms-grid;
   display: grid;
@@ -908,10 +912,6 @@ body {
 
 .page {
   min-width: 0;
-}
-
-.margin-null {
-  margin-bottom: 0;
 }
 
 @-webkit-keyframes ticker {
